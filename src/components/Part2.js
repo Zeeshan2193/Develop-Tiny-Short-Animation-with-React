@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+//import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import UxImg from "../images/services-6.svg";
 import UxImg1 from "../images/services-7.svg"
 import UxImg2 from "../images/services-5.svg";
 import { Typography } from '@material-ui/core';
-import useWebAnimations, { tada, flash, pulse, bounce, backInRight, backInLeft} from "@wellyshen/use-web-animations";
+import useWebAnimations, { tada, pulse, bounce, backInRight, backInLeft} from "@wellyshen/use-web-animations";
 
  
 const useStyles = makeStyles((theme) => ({

@@ -1,12 +1,12 @@
-import React, {useRef} from 'react';
+import React, from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+//import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
 import intro_p1 from '../images/Intro_Featured_Image_Empty.svg';
 import intro_p2 from '../images/Intro_Front_Layer.svg';
 import intro_p3 from '../images/Intro_Brain.svg';
-import useWebAnimations, { flash, pulse, bounce,backInDown, backInLeft, backInRight, backInUp} from "@wellyshen/use-web-animations";
+import useWebAnimations, { flash, bounce,backInDown, backInLeft, backInRight, backInUp} from "@wellyshen/use-web-animations";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -112,7 +112,7 @@ export default function Part1() {
 
 
 
-    const mainImg = useWebAnimations({... bounce});
+    const mainImg = useWebAnimations({...bounce});
     const brainImg = useWebAnimations({
         keyframes: {
           transform: ["translateY(10px)" , "translateY(-70px)", "scale(0.5)"," scale(0.7)"], // Move by 500px
